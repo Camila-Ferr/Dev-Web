@@ -1,0 +1,6 @@
+.bgcarrosel{
+    /* background-size: cover; faz a imagem expandir na horizontal e vertical */
+    background-color: rgb(250, 250, 250);
+    background-size: cover; 
+    height: 240px;
+}
