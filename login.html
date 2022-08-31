@@ -17,7 +17,7 @@
                            
       <div class="container">
                            
-         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" style="width: 150px" alt="logo"></a> 
+         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="width: 150px" alt="logo"></a> 
                                     
                            
          <div class="row d-none d-md-block">
@@ -41,30 +41,43 @@
          </button>
                                     
                            
-         <div div class="collapse navbar-collapse" id = "menu"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+         <div div class="collapse navbar-collapse"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
                            
             <div class="navbar-nav mr-auto">
                <div class="dropdown">
                <!-- Data-toogle: Chama a função dropdown do js -->
                   <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Explorar</a>
                   <div class="dropdown-menu"> <!-- Classe bootstrap -->
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
-                     <a class="dropdown-item" href="#">lorem-ipsulum-dolor</a>
+                     <a class="dropdown-item" href="#">Leitores</a>
+                     <a class="dropdown-item" href="#">Lançamentos</a>
+                     <a class="dropdown-item" href="#">Trocas</a>
+                     <a class="dropdown-item" href="#">Cortesias</a>
+                     <a class="dropdown-item" href="#">Fórum de discussões</a>
+                     <a class="dropdown-item" href="ranking.html">Ranking</a>
+                     <a class="dropdown-item" href="#">Meta de leitura</a>
+                     <a class="dropdown-item" href="#">Retrospectiva</a>
                   </div>
                </div>
             </div>
                            
             <div class="navbar-nav">
-               <a class="nav-link nav-item" href="#">Entrar</a>
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
             </div>
                            
          </div>
+
+         <div div class="collapse navbar-collapse" id = "menu"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+            <div class="navbar-nav d-sm-block d-md-none">
+               <a class="nav-link nav-item" href="#">Leitores</a>
+               <a class="nav-link nav-item" href="#">Lançamentos</a>
+               <a class="nav-link nav-item" href="#">Trocas</a>
+               <a class="nav-link nav-item" href="#">Cortesias</a>
+               <a class="nav-link nav-item" href="#">Fórum de discussões</a>
+               <a class="nav-link nav-item" href="ranking.html">Ranking</a>
+               <a class="nav-link nav-item" href="#">Meta de leitura</a>
+               <a class="nav-link nav-item" href="#">Retrospectiva</a>
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
+            </div>
       </div>
    </nav>
    <div style="margin-top:80px;"></div>
@@ -175,7 +188,7 @@
                   <div class="text-center">
                      <div class="form-group row">
                         <div class="col-lg-10 offset-lg-2">
-                           <button type="button" class="btn btn-primary w-50" data-dismiss="modal"> Enviar
+                           <button type="botton" class="btn btn-primary w-50" href="#cadastro-concluido" data-toggle="alert" > Enviar
                            </button>
                         </div>
                      </div>
@@ -186,7 +199,23 @@
       </div>
    </div>  
 
-</div>
+<!--SOS: NÃO FUNCIONA: PS: MEXER NO BOTÃO DE ENVIAR-->
+
+   <!-- Alerta-->
+   <!--alert : componente base-->
+   <!--alert-success: componente de estilo (info, warning, danger, sucess)-->
+   <!--alert-dismissible : indica que pode acontecer interação com o alerta (no caso, fechamento)-->
+   <!--data-dismiss - nome da função do js do bootstrap que será executada quando o botão for clicado, no caso, indicando que o
+   botão é apenas um alerta -->
+   <!--fade: esconder e aparecer em forma de animação-->
+   <div class="fade alert-info alert-dismissible container" role="alert" id="cadastro-concluido" style="width: 500px;">
+      <button type="botton" class="close" data-dismiss="alert" aria-label="close">
+         <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="alert-heading">Quase lá...</h4>
+      <p>Acesse o seu e-mail para finalizar sua inscrição.</p>
+   </div>
+</div> 
 
 
   

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+
+<head>
+   <meta charset="UTF-8"> <!-- Letras representadas de 1 a 4 bytes. -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Indica que o site foi criado de forma responsiva. -->
+   <link href="assets/css/bootstrap.css" rel="stylesheet"> <!-- Css bootstrap. -->
+   <link href="assets/css/all.css" rel="stylesheet"> <!-- Css font-alwesome -->
+   <link href="assets/css/styles.css" rel="stylesheet"> <!-- Folha de estilo. -->
+   <title>Bootstrap</title>
+</head>
+<!-- Navbar responsiva _  Navbar-expand-md(md = médium) :Forma expandida para dispositivos de tamanho médio ou maior (>=768px)
+                          Menu hambúrguer para tratar os dispositivos menores (<768px)  -->
+<!--  Row - colocar todos os elementos envolvidos na classe na mesma linha -->
+<body>
+   <nav class="navbar navbar-light navbar-expand-md fixed-top " style="background-color: #7ab8e4;"> 
+                           
+      <div class="container">
+                           
+         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="width: 150px" alt="logo"></a> 
+                                    
+                           
+         <div class="row d-none d-md-block">
+            <div class="mr-5 col-md-9"> <!--  mr= margin right -->
+                                             
+               <form class="d-flex " role="search">
+                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="width: 500px">
+                                                
+                  <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </form>
+                                          
+            </div>
+         </div>
+                                    
+         <!-- atributos aria_ Atributos lidos por screen readers para ajudar deficientes visuais a entender conteúdo de um site -->
+         <!-- data-toggle= "collapse" _ Chama o algorítmo do js que faz a barra de navegação ser escondida ou exibida -->
+         <!-- data-target _ Indica o conteúdo a ser escondida ou exibida -->
+                           
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+                                    
+                           
+         <div div class="collapse navbar-collapse"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+                           
+            <div class="navbar-nav mr-auto">
+               <div class="dropdown">
+               <!-- Data-toogle: Chama a função dropdown do js -->
+                  <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Explorar</a>
+                  <div class="dropdown-menu"> <!-- Classe bootstrap -->
+                     <a class="dropdown-item" href="#">Leitores</a>
+                     <a class="dropdown-item" href="#">Lançamentos</a>
+                     <a class="dropdown-item" href="#">Trocas</a>
+                     <a class="dropdown-item" href="#">Cortesias</a>
+                     <a class="dropdown-item" href="#">Fórum de discussões</a>
+                     <a class="dropdown-item" href="#">Ranking</a>
+                     <a class="dropdown-item" href="#">Meta de leitura</a>
+                     <a class="dropdown-item" href="#">Retrospectiva</a>
+                  </div>
+               </div>
+            </div>
+                           
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
+            </div>
+                           
+         </div>
+
+         <div div class="collapse navbar-collapse" id = "menu"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+            <div class="navbar-nav d-sm-block d-md-none">
+               <a class="nav-link nav-item" href="#">Leitores</a>
+               <a class="nav-link nav-item" href="#">Lançamentos</a>
+               <a class="nav-link nav-item" href="#">Trocas</a>
+               <a class="nav-link nav-item" href="#">Cortesias</a>
+               <a class="nav-link nav-item" href="#">Fórum de discussões</a>
+               <a class="nav-link nav-item" href="ranking.html">Ranking</a>
+               <a class="nav-link nav-item" href="#">Meta de leitura</a>
+               <a class="nav-link nav-item" href="#">Retrospectiva</a>
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
+            </div>
+      </div>
+   </nav>
+   <!--Conteúdo-->
+   <div style="margin-top:80px;"></div>
+   <div class="conteudo">
+    <div class="container">
+        <h2><div class="font-weight-bold">Top Mais Pesquisados</div></h2>
+        <div>Abaixo os mais acessados no site:</div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="row">
+            <!--Lista não ordenada-->
+            <div class="col-md-2 col-sm-2">
+                <div style="margin-top:50px;">
+                <h4><div class="font-weight-bold">Top 10</div></h4>
+                    <ul class="list-unstyled">
+                    <a href="#"><li>Mais desejados</li></a>
+                    <a href="#"><li>Mais abandonados</li></a>
+                    <a href="#"><li>Mais lidos</li></a>
+                    <a href="#"><li>Mais favoritados</li></a>
+                    <a href="#"><li>Mais novos</li></a>
+                </div>
+                </ul>
+
+            </div>
+            <!--Aqui começa a tabela ocupando 10 espaços-->
+            <!--table-hover - realiza a mudança de cor da linha quando o mouse estiver pousado-->
+            <!--primary - estilização da tabela, podendo ser secondary,dark,light...-->
+            <div class="col-md-10 col-sm-10">
+                <table class="table table-hover table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Top 10</th>
+                            <th scope="col">Informações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro1.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Conectadas</p>
+                            <p>Autor: Clara Alves</p>
+                            <p>Gênero: Ficção</p>
+                            <p>Classificação:<i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro2.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Torto Arado</p>
+                            <p>Autor: Itamar Vieira Junior</p>
+                            <p>Gênero: Ficção/Romance</p>
+                            <p>Classificação:<i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro3.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Bom dia, Verônica</p>
+                            <p>Autores: Ilana Casoy e Raphael Montes</p>
+                            <p>Gênero: Suspense/Mistério/Ficção policial/Policial processual</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro4.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Perdida: Um amor que ultrapassa as barreiras do tempo</p>
+                            <p>Autor: Carina Rissi</p>
+                            <p>Gênero: Romance</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro5.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Quinze dias</p>
+                            <p>Autor: Vitor Martins</p>
+                            <p>Gênero: Ficção</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro6.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: O Meu Pé de Laranja Lima</p>
+                            <p>Autor: José Mauro de Vasconcelos</p>
+                            <p>Gênero: Romance/Ficção autobiográfica</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro7.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: O Alquimista</p>
+                            <p>Autor: Paulo Coelho</p>
+                            <p>Gênero: Drama/Literatura Fantástica</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro8.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Indomada: Os laços inquebráveis do amor</p>
+                            <p>Autor: Carina Rissi</p>
+                            <p>Gênero: Romance</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro9.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Você tem a vida inteira</p>
+                            <p>Autor: Lucas Rocha</p>
+                            <p>Gênero: Ficção</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i></p></container>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td><div class="ranking">
+                            <a href="#"><img src="assets/images/livro10.jpg" style="width:100px ;"></a></td>
+                        </div>
+                        <td><container><p>Título: Quando o vento sumiu</p>
+                            <p>Autor: Graciela Mayrink</p>
+                            <p>Gênero: Amadurecimento</p>
+                            <p>Classificação: <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i></p></container>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Rodapé-->
+    <div class="footer">
+        <div class="container">
+           <div class="row">
+                 
+              <div class="col-md-3 col-sm-center">
+                 <a class="navbar-brand" href="#"><img src="assets/images/logo.png" style="width: 150px"></a> 
+              </div> 
+                 
+              <div class="col-md-5 col-sm-6">
+                 <div id="frases-id" class="carousel slide" data-ride="carousel" data-interval="8000">
+                    <div class="carousel-inner">
+                          
+                       <div class="carousel-item active w-15">
+                          <div class="frase text-center">Livros não mudam o mundo, quem muda o mundo são as pessoas. Os livros só mudam as pessoas.</div>
+                          <div class="autor font-italic text-lg-right"> Mário Quintana<i class="fa-solid fa-pen"></i></div>
+                       </div>
+                          
+                       <div class="carousel-item w-15">
+                          <div class="frase text-center"> A poesia não está nos versos, por vezes ela está no coração. E é tamanha. A ponto de não caber nas palavras.</div>
+                          <div class="autor font-italic text-lg-right"> Jorge Amado<i class="fa-solid fa-pen"></i></div>
+                       </div>
+                    
+                    </div>
+                 </div>
+              </div>
+                 
+              <div class="col-md-4 col-sm-6 ">
+                 <ul class="list-unstyled">
+                       
+                    <li><a href='#'>Quem Somos</a></li>
+                    <li><a href='#'>Cadastro de livros</a></li>
+                    <li><a href='#'>Cadastro de autores</a></li>
+                    <li><a href='#'>Parceria</a></li>
+                    <li><a href='#'>Contato</a></li>
+                    
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="end-page d-none d-md-block">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-3 col-sm-3 ">
+                 <a class="list-unstyled" href="#">Livros</a>
+              </div>
+              <div class="col-md-3 col-sm-3 ">
+                 <a class="list-unstyled" href="#">Autores</a>
+              </div>
+              <div class="col-md-3 col-sm-3 ">
+                 <a class="list-unstyled" href="#">Editoras</a>
+              </div>
+              <div class="col-md-3 col-sm-3 ">
+                 <a class="list-unstyled" href="#">Leitores</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  
+     <script src="assets/js/jquery-3.3.1.js"></script>
+     <script src="assets/js/popper.js"></script>
+     <script src="assets/js/bootstrap.js"></script>
+     <script src="assets/js/script.js"></script>
+  </body>
+  </html>
+
+
+   </div>
+
