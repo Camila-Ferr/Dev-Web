@@ -65,7 +65,9 @@
             </div>
                            
          </div>
-
+         <!--Menu para small-->
+         <!--sm-block - mostrar para small em diante-->
+         <!--md-none - ocultar para medium em diante-->
          <div div class="collapse navbar-collapse" id = "menu"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
             <div class="navbar-nav d-sm-block d-md-none">
                <a class="nav-link nav-item" href="#">Leitores</a>
@@ -78,146 +80,137 @@
                <a class="nav-link nav-item" href="#">Retrospectiva</a>
                <a class="nav-link nav-item" href="login.html">Entrar</a>
             </div>
+         </div>
       </div>
    </nav>
+
+   <!--Margin da navbar-->
    <div style="margin-top:80px;"></div>
+
+   <!--Conteúdo da página-->
    <div class="conteudo">
       <div class="container">
          <div class="row">
             <div class="col-md-6 col-sm-6">
                <h2>Descubra autores perto de você</h2>
-               <div>A plataforma foi criada pensando em dar visibilidade a obras nacionais e oferecer uma experiência única de 
-               conversa entre o escritor e o leitor. Sinta-se em casa para conhecer novas obras e fazer amizades.</div>
+               <div><p>A plataforma foi criada pensando em dar visibilidade a obras nacionais e oferecer uma experiência única de 
+               conversa entre o escritor e o leitor. Sinta-se em casa para conhecer novas obras e fazer amizades.</p></div>
+               
+            
+            
             </div>
+
+            
       
 
-         <div class="formulario col-md-6 col-sm-6">
-            <div class="cadastro">
-               <h4>Primeira vez por aqui? Cadastre-se: </h4>
-               <div class="text-center">
-                  <button class="btn btn-primary w-50 mb-lg-auto" href="#cadastromodal" data-toggle="modal" style="margin-top: 10px" type="submit"><i class="fa-solid fa-book-open-reader"></i> Cadastre-se</button>
-               </div>
-               <div style="margin-bottom: 66px"></div>
-               <h4>Acessar minha conta: </h4>
-               <div class="form-group row">
-                  <label for="e-mail" class="col-form-label col-lg-2"><i class="fa-solid fa-at"></i>Login</label>
-                  <div class="col-lg-10">
-                     <input type="text" class="form-control" placeholder="Login" id="login" name="login">
-                  </div>
-               </div>
-
-               <div class="form-group row">
-                  <label for="senha" class="col-form-label col-lg-2"><i class="fa-solid fa-unlock-keyhole"></i>Senha</label>
-                  <div class="col-lg-10">
-                     <input type="text" class="form-control" placeholder="Senha" id="senha" name="senha">
-                  </div>
-               </div>
-               <div class="text-center">
-                  <button class="btn btn-primary w-50 mb-lg-auto"  href="#" style="margin-top: 10px" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Entrar</button>
-               </div>
-            </div>
-        </div>    
-      </div>
-    </div>
-
-    <!--Começo da classe modal-->
-    <!--tamanho default: 500px pois não foram especificadas nenhuma classe modal-{tamanho} -->
-    <!--modal fade - Para o modal aparecer na tela quando chamado-->
-    <!--id referente ao href do botão cadastre-se-->
-    <!--modal-content - envolve o modal em um container-->
-    <!--modal-title - titulo do modal-->
-    <!--class="close" - estiliza o botão-->
-    <!--data-dismiss - nome da função do js do bootstrap que será executada quando o botão for clicado, no caso, indicando que 
-      a função fechará o modal -->
-   <!--aria-label - ajuda os deficientes visuais a saber para que serve o botão-->
-   <!--aria-hidden = true - indica que o valor do span deve ser ignorado pelos deficientes visuais-->
-   <!--&times; = responsável pelo "x"-->
-
-
-
-   <!--Modal body-->
-   <!--Form action - contém o endereço para onde a req http deverá ser enviada quando o form for submetido-->
-   <!--fieldset - conjunto de campos-->
-   <!--form-group - margin-bottom de 16px após o fieldset-->
-   <!--legend - (Não foi colocado) indica uma legenda-->
-   <!--label deve conter o atributo do id, para que se clicado, o cursor seja direcionado ao valor do id-->
-   <!--form-control - faz uma caixa de texto maior-->
-   <!--Placeholder- é exibido um texto dentro da caixa de texto-->
-   <!--name - atributo que define a caixa digitada no envio da requisição-->
-   <!--col-form-label do elemento label centraliza o label na caixa de texto definida pelo elemento input-->
-   <!--col-lg-2 - ocupa 2 colunas do greed do bootstrap do large em diante-->
-
-   <!--font-weight-bold- Negrito-->
-
-
-   <div class="modal fade" id="cadastromodal">
-      <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="modal-header">
-               <span class="modal-title font-weight-bold"> Cadastre-se</span>
-               <button type="botton" class="close" data-dismiss="modal" aria-label="close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form action="">
-
-                  <fieldset class="form-group">
-                     <div class="form-group row">
-                        <label for="nome" class="col-form-label col-lg-2">Nome</label>
-                        <div class="col-lg-10">
-                           <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
-                        </div>
-                     </div>
-
-                     <div class="form-group row">
-                        <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
-                        <div class="col-lg-10">
-                           <input type="text" class="form-control" placeholder="E-mail" id="e-mail" name="e-mail">
-                        </div>
-                     </div>
-
-                     <div class="form-group row">
-                        <label for="senha-cadastro" class="col-form-label col-lg-2">Senha</label>
-                        <div class="col-lg-10">
-                           <input type="text" class="form-control" placeholder="Senha" id="senha-cadastro" name="senha">
-                        </div>
-                     </div>
-                     
-                  </fieldset>
+            <div class="formulario col-md-6 col-sm-6">
+               <div class="cadastro">
+                  <h4>Primeira vez por aqui? Cadastre-se: </h4>
                   <div class="text-center">
-                     <div class="form-group row">
-                        <div class="col-lg-10 offset-lg-2">
-                           <button type="botton" class="btn btn-primary w-50" href="#cadastro-concluido" data-toggle="alert" > Enviar
-                           </button>
-                        </div>
+                     <button class="btn btn-primary w-50 mb-lg-auto mt-2" href="#cadastromodal" data-toggle="modal" type="submit"><i class="fa-solid fa-book-open-reader"></i> Cadastre-se</button>
+                  </div>
+                  <div class="mb-5"></div>
+                  <h4>Acessar minha conta: </h4>
+                  <div class="form-group row">
+                     <label for="e-mail" class="col-form-label col-lg-2"><i class="fa-solid fa-at"></i>Login</label>
+                     <div class="col-lg-10">
+                        <input type="text" class="form-control" placeholder="Login" id="login" name="login">
                      </div>
                   </div>
-               </form>
-            </div>
+
+                  <div class="form-group row">
+                     <label for="senha" class="col-form-label col-lg-2"><i class="fa-solid fa-unlock-keyhole"></i>Senha</label>
+                     <div class="col-lg-10">
+                        <input type="text" class="form-control" placeholder="Senha" id="senha" name="senha">
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <button class="btn btn-primary w-50 mb-lg-auto mt-2"  href="#" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Entrar</button>
+                  </div>
+               </div>
+            </div>    
          </div>
       </div>
-   </div>  
 
-<!--SOS: NÃO FUNCIONA: PS: MEXER NO BOTÃO DE ENVIAR-->
-
-   <!-- Alerta-->
-   <!--alert : componente base-->
-   <!--alert-success: componente de estilo (info, warning, danger, sucess)-->
-   <!--alert-dismissible : indica que pode acontecer interação com o alerta (no caso, fechamento)-->
-   <!--data-dismiss - nome da função do js do bootstrap que será executada quando o botão for clicado, no caso, indicando que o
-   botão é apenas um alerta -->
-   <!--fade: esconder e aparecer em forma de animação-->
-   <div class="fade alert-info alert-dismissible container" role="alert" id="cadastro-concluido" style="width: 500px;">
-      <button type="botton" class="close" data-dismiss="alert" aria-label="close">
-         <span aria-hidden="true">&times;</span>
-      </button>
-      <h4 class="alert-heading">Quase lá...</h4>
-      <p>Acesse o seu e-mail para finalizar sua inscrição.</p>
-   </div>
-</div> 
+      <!--Começo da classe modal-->
+      <!--tamanho default: 500px pois não foram especificadas nenhuma classe modal-{tamanho} -->
+      <!--modal fade - Para o modal aparecer na tela quando chamado-->
+      <!--id referente ao href do botão cadastre-se-->
+      <!--modal-content - envolve o modal em um container-->
+      <!--modal-title - titulo do modal-->
+      <!--class="close" - estiliza o botão-->
+      <!--data-dismiss - nome da função do js do bootstrap que será executada quando o botão for clicado, no caso, indicando que 
+         a função fechará o modal -->
+      <!--aria-label - ajuda os deficientes visuais a saber para que serve o botão-->
+      <!--aria-hidden = true - indica que o valor do span deve ser ignorado pelos deficientes visuais-->
+      <!--&times; = responsável pelo "x"-->
 
 
+
+      <!--Modal body-->
+      <!--Form action - contém o endereço para onde a req http deverá ser enviada quando o form for submetido-->
+      <!--fieldset - conjunto de campos-->
+      <!--form-group - margin-bottom de 16px após o fieldset-->
+      <!--legend - (Não foi colocado) indica uma legenda-->
+      <!--label deve conter o atributo do id, para que se clicado, o cursor seja direcionado ao valor do id-->
+      <!--form-control - faz uma caixa de texto maior-->
+      <!--Placeholder- é exibido um texto dentro da caixa de texto-->
+      <!--name - atributo que define a caixa digitada no envio da requisição-->
+      <!--col-form-label do elemento label centraliza o label na caixa de texto definida pelo elemento input-->
+      <!--col-lg-2 - ocupa 2 colunas do greed do bootstrap do large em diante-->
+
+      <!--font-weight-bold- Negrito-->
+
+
+      <div class="modal fade" id="cadastromodal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title font-weight-bold"> Cadastre-se</span>
+                  <button type="botton" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+
+                     <fieldset class="form-group">
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome</label>
+                           <div class="col-lg-10">
+                              <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome">
+                           </div>
+                        </div>
+
+                        <div class="form-group row">
+                           <label for="e-mail" class="col-form-label col-lg-2">E-mail</label>
+                           <div class="col-lg-10">
+                              <input type="text" class="form-control" placeholder="E-mail" id="e-mail" name="e-mail">
+                           </div>
+                        </div>
+
+                        <div class="form-group row">
+                           <label for="senha-cadastro" class="col-form-label col-lg-2">Senha</label>
+                           <div class="col-lg-10">
+                              <input type="text" class="form-control" placeholder="Senha" id="senha-cadastro" name="senha">
+                           </div>
+                        </div>
+                        
+                     </fieldset>
+                     <div class="text-center">
+                        <div class="form-group row">
+                           <div class="col-lg-10 offset-lg-2">
+                              <button type="botton" class="btn btn-primary w-50" aria-label="close"  > Enviar
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>  
+   </div> 
   
    
    
@@ -288,5 +281,6 @@
    <script src="assets/js/popper.js"></script>
    <script src="assets/js/bootstrap.js"></script>
    <script src="assets/js/script.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

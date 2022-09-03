@@ -78,10 +78,8 @@
                <a class="nav-link nav-item" href="#">Retrospectiva</a>
                <a class="nav-link nav-item" href="login.html">Entrar</a>
             </div>
-      </div>
+         </div>
    </nav>
-
-
 
    <!-- Carrossel-->
 
@@ -104,32 +102,189 @@
          </ol>
          
          <div class="carousel-inner">
-            <div class="carousel-item active">
-               <img src="assets/images/banner1.jpg" class="d-block w-80" style="width:960px;height:240px">
+            <div class="carousel-item active text-center">
+               <img src="assets/images/banner1.jpg" class="d-block w-100" style="height:280px">
             </div>
 
             <div class="carousel-item">
-               <img src="assets/images/banner2.png" class="d-block w-80" style="width:960px;height:240px">
+               <img src="assets/images/banner2.png" class="d-block w-100" style="height:280px">
             </div>
             
             <div class="carousel-item">
-               <img src="assets/images/banner3.jpg" class="d-block w-80" style="width:960px;height:240px">
+               <img src="assets/images/banner3.jpg" class="d-block w-100" style="height:280px">
             </div>
 
          </div>
       </div>
-      <a href="#carrosel-id" class="carousel-control-prev" role="button" data-slide="prev">
-         <span class="carousel-control-prev-icon"></span> 
-      </a>
-      <a href="#carrosel-id" class="carousel-control-next" role="button" data-slide="next">
-         <!-- <span class="carousel-control-next-icon"></span> NAO FUNCIONA-->
-      </a>
    </div>
-   
+  
+   <!--Sorteios-->
+   <!--card-deck - vários cards-->
+   <!--border-0 - nenhuma borda-->
+   <!--align-self-center - Alinhar a si mesmo no centro (mostrar no modo sm)-->
+   <!--img-fluid- imagem responsiva-->
+   <!--d-none - não aparecer-->
+   <!--d-lg-block - aparecer no modo large-->
+   <!--d-lg-md - aparecer no modo médio-->
+   <div class="container">
+
+      <div class="card mt-5 mt-md-3 shadow-lg">      
+         <div class="card-deck mt-4 mt-md-0">
+            <div class="card border-0 align-self-center">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio1.jpg" style="width: 160px;">
+            </div>
+            <div class="card border-0 align-self-center">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio2.jpg" style="width: 160px">
+            </div>
+            <div class="card border-0 align-self-center">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio3.jpg" style="width: 160px">
+            </div>
+            <div class="card d-none d-md-block border-0">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio4.jpg" style="width: 160px">
+            </div>
+            <div class="card d-none d-lg-block border-0">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio5.jpg" style="width: 156px">
+            </div>
+            <div class="card d-none d-lg-block border-0">
+               <img class="card-img-top img-fluid" src="./assets/images/Sorteio6.jpg" style="width: 160px">
+            </div>
+         </div>
+
+         <div class="card-body">
+            <div class="row">
+               <div class="col-md-10">
+                  <div class="card-title font-weight-bold">Sorteio de milhares de cortesias</div>
+                  <div class="card-text"> Seja um dos primeiros a ler os principais lançamentos editoriais.</div>
+               </div>
+               <div class="col-md-2 text-right">
+                  <button type="button" class="btn btn-outline-primary">Confira <i class="fa-solid fa-book-open"></i></button>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+      <!--Notícias-->
+      <!--nav - Aba de navegação-->
+      <!--d-flex - É ultilizado para que a aba e a notícia fiquem alinhadas  -->
+      <!--flex-column- Indica que o alinhamento da lista deve ser em colunas-->
+      <!--nav-tabs - criar regiões tabuladas com o plug-in JavaScript. Responsável pelo efeito quando a guia é clicada.-->
+      <!-- data-bs-toggle="tab" - Para tornar as guias alternáveis-->
+      <!--data-bs-target - indicar a guia que irá abrir-->
+      <!--aria-selected="true" - indicar para os screen-readers que só pode ter um selecionado e que o conteúdo de cada selecionado é diferente-->
+
+      <!--tab-content - colunas dividas em subsessões-->
+      <!--tab-pane - indicar que o conteúdo dentro da div é de uma coluna-->
+      <!--fade - componente de estilo mostrando como o conteúdo será apresentado-->
+      <!--card-footer - linha ao final do card-->
+      <!--row e card-columns - alinha o texto e a foto na mesma linha-->
+      <div class="container mt-3">
+         <div class="d-flex ">
+            <ul class="nav flex-column nav-tabs">
+               <li class="nav-item">
+               <button class="nav-link active w-100" data-bs-toggle="tab" data-bs-target="#series" type="button" aria-selected="true">Séries</button>
+               </li>
+               <li class="nav-item">
+                  <button class="nav-link w-100" data-bs-toggle="tab" data-bs-target="#eventos" type="button" aria-selected="true">Eventos</button>
+               </li>
+               <li class="nav-item">
+                  <button class="nav-link w-100" data-bs-toggle="tab" data-bs-target="#homenagens" type="button" aria-selected="true">Homenagens</button>
+               </li>
+               <li class="nav-item">
+                  <button class="nav-link w-100" data-bs-toggle="tab" data-bs-target="#novos-leitores" type="button" aria-selected="true">Literature-se</button>
+               </li>
+            </ul>
+
+
+            <div class="tab-content" >
+               <div class=" tab-pane fade show active" id="series"  tabindex="0"  >
+
+                  <div class="row card-columns">
+                     <div class="col-md-2 h-100 text-center">
+                        <img src="assets/images/artigo1.jpg" class="ml-3" style="width: 150px;">
+                     </div>
+
+                     <div class="card-body">
+                        <h5 class="card-title">Perdida | Giovanna Grigio irá estrelar adaptação do livro de Carina Rissi</h5>
+                        <p class="card-text">19 de Maio de 2022</p>
+                     
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-primary">Confira</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               
+               <div class=" tab-pane fade" id="eventos" tabindex="1">
+
+                  <div class="row card-columns">
+                     <div class="col-md-3 h-100 text-center">
+                        <img src="assets/images/artigo2.jpg" class="ml-3" style="width: 150px;">
+                     </div>
+
+                     <div class="card-body">
+                        <h5 class="card-title">Confira tudo o que rolou na Bienal do Livro em São Paulo</h5>
+                        <p class="card-text">14 de Julho de 2022</p>
+                     
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-primary">Confira</button>
+                        </div>
+                     </div>
+                  
+                  </div>
+               
+               </div>
+               
+               <div class=" tab-pane fade" id="homenagens" tabindex="2"> 
+                  
+                  <div class="row card-columns">
+                     <div class="col-md-2 h-100 text-center">
+                        <img src="assets/images/artigo3.jpg" class="ml-3" style="width: 150px;">
+                     </div>
+
+                     <div class="card-body ml-3">
+                        <h5 class="card-title">Curitiba cria projeto em homenagem a Clarice Lispector</h5>
+                        <p>Escritora é a brasileira mais traduzida no mundo e teria feito 100 anos em 2020.</p>
+                        <p class="card-text">22 de Maio de 2022</p>
+                     
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-primary">Confira</button>
+                        </div>
+                     </div>
+                  
+                  </div>
+               </div>
+               
+               <div class="tab-pane fade" id="novos-leitores" tabindex="3">
+
+                  <div class="row card-columns">
+                     
+                     <div class="col-md-2 h-100 text-center">
+                        <img src="assets/images/artigo4.jpg" class="ml-3" style="width: 150px;">
+                     </div>
+
+                     <div class="card-body ml-3">
+                        <h5 class="card-title">A importância da feira do livro na construção de novos leitores</h5>
+                        <p class="card-text">1 de Setembro de 2022</p>
+                     
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-primary">Confira</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
    
    <!--Começo do rodapé-->
    <!--list-unstyled= remove os marcadores da lista-->
    <!--container= cuida do alinhamento-->
+
    
    <div class="footer">
       <div class="container">
@@ -157,7 +312,7 @@
                </div>
             </div>
                
-            <div class="col-md-4 col-sm-6 ">
+            <div class="col-md-4 col-sm-6 text-sm-center ">
                <ul class="list-unstyled">
                      
                   <li><a href='#'>Quem Somos</a></li>
@@ -194,5 +349,6 @@
    <script src="assets/js/popper.js"></script>
    <script src="assets/js/bootstrap.js"></script>
    <script src="assets/js/script.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
