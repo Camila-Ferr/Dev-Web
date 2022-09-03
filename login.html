@@ -88,6 +88,11 @@
    <div style="margin-top:80px;"></div>
 
    <!--Conteúdo da página-->
+
+   <!--hr - linha-->
+   <!--jumbotron- caixa de texto-->
+   <!--badge-info- estilização-->
+   <!--h75 - altura 75%-->
    <div class="conteudo">
       <div class="container">
          <div class="row">
@@ -96,15 +101,27 @@
                <div><p>A plataforma foi criada pensando em dar visibilidade a obras nacionais e oferecer uma experiência única de 
                conversa entre o escritor e o leitor. Sinta-se em casa para conhecer novas obras e fazer amizades.</p></div>
                
-            
+               <div class="jumbotron badge-info bg-dark h-75 text-center">
+                  <h3>Envie seu desenho para a gente</h3>
+                  <p>Em breve faremos uma disputa de desenhos baseados em personagens literários brasileiros. Envie o seu!</p>
+                  <img src="assets/images/entrar.jpg" class=" w-75">
+                  <hr>
+                  <p class="text-right">
+                    <a class="btn btn-info" href="#" role="button">Regras para envio</a>
+                  </p>
+                </div>
             
             </div>
 
-            
+            <!--data-toggle = "modal" - chama o algorítmo do js que faz o modal ser exibido-->
+            <!--form-group - adiciona estrutura aos formulários.-->
+            <!--col-form-label- centraliza verticalmente os labels com seus controles de formulário associados.-->
+            <!--col-lg - quantos espaços ocupa-->
+            <!--form-control - estiliza, tornando-o grande, no caso-->
       
 
             <div class="formulario col-md-6 col-sm-6">
-               <div class="cadastro">
+               <div class="cadastro mt-5">
                   <h4>Primeira vez por aqui? Cadastre-se: </h4>
                   <div class="text-center">
                      <button class="btn btn-primary w-50 mb-lg-auto mt-2" href="#cadastromodal" data-toggle="modal" type="submit"><i class="fa-solid fa-book-open-reader"></i> Cadastre-se</button>
