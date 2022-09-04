@@ -4,6 +4,11 @@
     background-size: cover; 
     height: 280px;
 }
+
+.bgmeta_leitura{
+    /* background-size: cover; faz a imagem cobrir toda a tela */
+    background-size: cover; 
+}
 .footer{
     margin-top: 50px;
     background-color: #7ab8e4;

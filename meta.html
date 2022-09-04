@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+
+<head>
+   <meta charset="UTF-8"> <!-- Letras representadas de 1 a 4 bytes. -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Indica que o site foi criado de forma responsiva. -->
+   <link href="assets/css/bootstrap.css" rel="stylesheet"> <!-- Css bootstrap. -->
+   <link href="assets/css/all.css" rel="stylesheet"> <!-- Css font-alwesome -->
+   <link href="assets/css/styles.css" rel="stylesheet"> <!-- Folha de estilo. -->
+   <title>Bootstrap</title>
+</head>
+<!-- Navbar responsiva _  Navbar-expand-md(md = médium) :Forma expandida para dispositivos de tamanho médio ou maior (>=768px)
+                          Menu hambúrguer para tratar os dispositivos menores (<768px)  -->
+<!--  Row - colocar todos os elementos envolvidos na classe na mesma linha -->
+<body>
+   <nav class="navbar navbar-light navbar-expand-md fixed-top " style="background-color: #7ab8e4;"> 
+                           
+      <div class="container">
+                           
+         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="width: 150px" alt="logo"></a> 
+                                    
+                           
+         <div class="row d-none d-md-block">
+            <div class="mr-5 col-md-9"> <!--  mr= margin right -->
+                                             
+               <form class="d-flex " role="search">
+                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="width: 500px">
+                                                
+                  <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </form>
+                                          
+            </div>
+         </div>
+                                    
+         <!-- atributos aria_ Atributos lidos por screen readers para ajudar deficientes visuais a entender conteúdo de um site -->
+         <!-- data-toggle= "collapse" _ Chama o algorítmo do js que faz a barra de navegação ser escondida ou exibida -->
+         <!-- data-target _ Indica o conteúdo a ser escondida ou exibida -->
+                           
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+                                    
+                           
+         <div div class="collapse navbar-collapse"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+                           
+            <div class="navbar-nav mr-auto">
+               <div class="dropdown">
+               <!-- Data-toogle: Chama a função dropdown do js -->
+                  <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Explorar</a>
+                  <div class="dropdown-menu"> <!-- Classe bootstrap -->
+                     <a class="dropdown-item" href="#">Leitores</a>
+                     <a class="dropdown-item" href="#">Lançamentos</a>
+                     <a class="dropdown-item" href="#">Trocas</a>
+                     <a class="dropdown-item" href="#">Cortesias</a>
+                     <a class="dropdown-item" href="#">Fórum de discussões</a>
+                     <a class="dropdown-item" href="ranking.html">Ranking</a>
+                     <a class="dropdown-item" href="meta.html">Meta de leitura</a>
+                     <a class="dropdown-item" href="#">Retrospectiva</a>
+                  </div>
+               </div>
+            </div>
+                           
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
+            </div>
+                           
+         </div>
+
+         <div div class="collapse navbar-collapse" id = "menu"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->
+            <div class="navbar-nav d-sm-block d-md-none">
+               <a class="nav-link nav-item" href="#">Leitores</a>
+               <a class="nav-link nav-item" href="#">Lançamentos</a>
+               <a class="nav-link nav-item" href="#">Trocas</a>
+               <a class="nav-link nav-item" href="#">Cortesias</a>
+               <a class="nav-link nav-item" href="#">Fórum de discussões</a>
+               <a class="nav-link nav-item" href="ranking.html">Ranking</a>
+               <a class="nav-link nav-item" href="meta.html">Meta de leitura</a>
+               <a class="nav-link nav-item" href="#">Retrospectiva</a>
+               <a class="nav-link nav-item" href="login.html">Entrar</a>
+            </div>
+         </div>
+   </nav>
+   
+   <!--alert- alerta-->
+   <!--alert-warning- estilização-->
+   <!--progress-bar - indica o progresso até o momento.-->
+   <!--progress-bar-striped - estilização, deixar com linha-->
+   <!--bg-info - background-->
+
+   <div class="conteudo">
+      <div class="bgmeta_leitura mt-5">
+         <div class="alert alert-warning" role="alert">
+            
+            <div class="container">
+               <div class="row mt-3">      
+                  <div class="col-md-4 h-100 text-center">
+                     <img src="/assets/images/meta.png" style="width:150px ;">
+                  </div>
+                  
+                  <div class="col-md-8 h-100 text-left">
+                     <h3>Queremos ler <strong>1000</strong> livros.</h3>
+                     <h3>Já lemos <strong>250</strong> livros.</h3>
+                     <h3>Até agora somos <strong>100</strong> participando</h3>
+
+                     <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info"  aria-label="Info meta" style="width: 25%">25%</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="conquistas">
+         <div class="bg-light ">
+            <div class="container text-center">
+               <h3 class="mb-3 font-weight-bold" id="artigos">Conquistas</h3>
+               <div class="row">
+      
+                  <div class="col-md-3">
+                     <div class="card cardsHome shadow-lg h-100">
+                        
+                        <img src="assets/images/conquistas1.png" >
+                        <div class="card-body">
+                           <h5 class="card-title">Livro de Ouro.</h5>
+                           <p class="card-text">Mais de 20 livros lidos no mês.</p>
+                        </div>
+      
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-info">Ganhadores</button>
+                        </div>
+                        
+                     </div>
+                     
+                  </div>
+                     
+      
+                  <div class="col-md-3">
+                     <div class="card cardsHome shadow-lg h-100">
+      
+                        <img src="assets/images/conquistas2.png" >
+                        
+                        <div class="card-body">
+                           <h5 class="card-title">Pena de Ouro</h5>
+                           <p class="card-text">Mais de 10 livros cadastrados e favoritados pela galera.</p>
+                        </div>
+      
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-info">Ganhadores</button>
+                        </div>
+      
+                     </div>
+      
+                  </div>
+      
+      
+                  <div class="col-md-3">
+                     <div class="card cardsHome shadow-lg h-100">
+      
+                        <img src="assets/images/conquistas3.png" >
+                        
+                        <div class="card-body">
+                           <h5 class="card-title">Crítico.</h5>
+                           <p class="card-text">Resenhou mais de 10 livros no mês.</p>
+                        </div>
+      
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-info">Ganhadores</button>
+                        </div>
+      
+                     </div>
+      
+                  </div>
+      
+      
+                  <div class="col-md-3">
+                     <div class="card cardsHome shadow-lg h-100">
+      
+                        <img src="assets/images/conquistas4.png">
+                        
+                        <div class="card-body">
+                           <h5 class="card-title">Pé Direito.</h5>
+                           <p class="card-text">Primeiro livro cadastrado está na lista dos mais pesquisados do mês.</p>
+                        </div>
+      
+                        <div class="card-footer text-right">
+                           <button class="btn btn-outline-info">Ganhadores</button>
+                        </div>
+      
+                     </div>
+      
+                  </div>
+      
+      
+               </div>
+               
+            </div>
+         </div>
+
+      </div>
+
+
+
+
+
+
+   </div>
+
+
+
+
+   <!--Começo do rodapé-->
+   <!--list-unstyled= remove os marcadores da lista-->
+   <!--container= cuida do alinhamento-->
+
+   
+   <div class="footer">
+    <div class="container">
+       <div class="row">
+             
+          <div class="col-md-3 col-sm-center">
+             <a class="navbar-brand" href="#"><img src="assets/images/logo.png" style="width: 150px"></a> 
+          </div> 
+             
+          <div class="col-md-5 col-sm-6">
+             <div id="frases-id" class="carousel slide" data-ride="carousel" data-interval="8000">
+                <div class="carousel-inner">
+                      
+                   <div class="carousel-item active w-15">
+                      <div class="frase text-center">Livros não mudam o mundo, quem muda o mundo são as pessoas. Os livros só mudam as pessoas.</div>
+                      <div class="autor font-italic text-lg-right"> Mário Quintana<i class="fa-solid fa-pen"></i></div>
+                   </div>
+                      
+                   <div class="carousel-item w-15">
+                      <div class="text-center"> A poesia não está nos versos, por vezes ela está no coração. E é tamanha. A ponto de não caber nas palavras.</div>
+                      <div class="font-italic text-lg-right"> Jorge Amado<i class="fa-solid fa-pen"></i></div>
+                   </div>
+                
+                </div>
+             </div>
+          </div>
+             
+          <div class="col-md-4 col-sm-6">
+             <ul class="list-unstyled">
+                   
+                <li><a href='#'>Quem Somos</a></li>
+                <li><a href='#'>Cadastro de livros</a></li>
+                <li><a href='#'>Cadastro de autores</a></li>
+                <li><a href='#'>Parceria</a></li>
+                <li><a href='#'>Contato</a></li>
+                
+             </ul>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="end-page d-none d-md-block">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-3 col-sm-3 ">
+             <a class="list-unstyled" href="#">Livros</a>
+          </div>
+          <div class="col-md-3 col-sm-3 ">
+             <a class="list-unstyled" href="#">Autores</a>
+          </div>
+          <div class="col-md-3 col-sm-3 ">
+             <a class="list-unstyled" href="#">Editoras</a>
+          </div>
+          <div class="col-md-3 col-sm-3 ">
+             <a class="list-unstyled" href="#">Leitores</a>
+          </div>
+       </div>
+    </div>
+ </div>
+
+ <script src="assets/js/jquery-3.3.1.js"></script>
+ <script src="assets/js/popper.js"></script>
+ <script src="assets/js/bootstrap.js"></script>
+ <script src="assets/js/script.js"></script>
+ <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
