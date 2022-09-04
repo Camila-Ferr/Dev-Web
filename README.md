@@ -23,6 +23,7 @@
     <li>Modal</li>
     <li>Navbar</li>
 	<li>Navs and tabs</li>
+	<li>Progress</li>
 	<li>Tables</li>
 </ul>
 
