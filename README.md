@@ -10,7 +10,7 @@
 <p> A proposta do projeto é desenvolver páginas responsivas apresentando como foco o framework <strong>Bootstrap</string>.</p>
 <p>O tema escolhido para as páginas foi </p>
 
-<p>Segue abaixo os componentes utilizados></p>
+<p> <i class="fa-solid fa-screwdriver-wrench"></i>Segue abaixo os componentes utilizados:</p>
 
 <ul class="mt-3">
 	<li>Alerts</li>
