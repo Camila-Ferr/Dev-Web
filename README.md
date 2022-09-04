@@ -28,10 +28,9 @@
 
 
 <p>Abaixo segue os resultados: </p>
-<img src="./readme/pag_inicial.png" class="mt-3 mr-3">
+<img src="./readme/pagina_inicial.png" class="mt-3 mr-3">
 <img src="./readme/login.png" class="mt-3 mr-3">
-<img src="./readme/login.png" class="mt-3 mr-3">
-<img src="./readme/login.png" class="mt-3 mr-3">
+<img src="./readme/ranking.png" class="mt-3 mr-3">
 <img src="./readme/meta_leitura.png" class="mt-3 mr-3">
 
 
