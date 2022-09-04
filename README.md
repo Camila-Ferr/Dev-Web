@@ -7,8 +7,8 @@
 	<li>CSS</li>
 </ul>
 
-<p> A proposta do projeto é desenvolver páginas responsivas apresentando como foco o framework <strong>Bootstrap</string>.</p>
-<p>O tema escolhido para as páginas foi </p>
+<p> A proposta do projeto é desenvolver páginas responsivas apresentando como foco o framework <strong>Bootstrap</strong>.</p>
+<p>O tema escolhido para as páginas foi divulgação de autores brasileiros. A fonte de inspiração para o trabalho foi o <a href="https://www.skoob.com.br/">skoob.</a></p>
 
 <p> 🛠 Segue abaixo os componentes utilizados:</p>
 
