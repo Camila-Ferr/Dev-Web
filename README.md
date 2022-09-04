@@ -20,6 +20,7 @@
     <li>Carousel</li>
     <li>Forms</li>
     <li>Footer</li>
+    <li>List group</li>
     <li>Modal</li>
     <li>Navbar</li>
 	<li>Navs and tabs</li>
