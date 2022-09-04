@@ -14,15 +14,15 @@
 
 <ul class="mt-3">
 	<li>Alerts</li>
-	<li>Breadcrumb</li>
+	<li>Badges</li>
 	<li>Button</li>
 	<li>Cards</li>
-    <li>Carousel</li>
-    <li>Forms</li>
-    <li>Footer</li>
-    <li>List group</li>
-    <li>Modal</li>
-    <li>Navbar</li>
+    	<li>Carousel</li>
+    	<li>Forms</li>
+    	<li>Footer</li>
+    	<li>List group</li>
+    	<li>Modal</li>
+    	<li>Navbar</li>
 	<li>Navs and tabs</li>
 	<li>Progress</li>
 	<li>Tables</li>
