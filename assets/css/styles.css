@@ -19,3 +19,11 @@
     background-color: rgb(255, 255, 255);
     padding: 8px;
 }
+.bg_sobre{
+    background-color: rgba(233, 188, 188, 0.068);
+    color:white;
+    font-weight: bold;
+}
+.bg_sobre .h4{
+    font-weight: bold;
+}
