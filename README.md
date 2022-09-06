@@ -17,13 +17,14 @@
 	<li>Badges</li>
 	<li>Button</li>
 	<li>Cards</li>
-    	<li>Carousel</li>
-    	<li>Forms</li>
-    	<li>Footer</li>
-    	<li>List group</li>
-    	<li>Modal</li>
-    	<li>Navbar</li>
+    <li>Carousel</li>
+    <li>Forms</li>
+    <li>Footer</li>
+    <li>List group</li>
+    <li>Modal</li>
+    <li>Navbar</li>
 	<li>Navs and tabs</li>
+	<li>Offcanvas</li>
 	<li>Progress</li>
 	<li>Tables</li>
 </ul>
