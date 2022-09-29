@@ -1,5 +1,5 @@
 # Dev-Web
-<h2>Descrição: </h2>
+<h2>Trabalho 2_ Descrição: </h2>
 <p> Páginas criadas utilizando as seguintes linguagens :</p>
 	
 <ul class="mt-3">
@@ -15,6 +15,13 @@ O trabalho também apresenta como foco o uso do webpack, acrescentando no arquiv
 e acrescendo aos bundles o bootstrap.</p>
 <p>O tema para o desenvolvimento da página se manteve: divulgação de autores brasileiros. A fonte de inspiração para o trabalho foi o <a href="https://www.skoob.com.br/">skoob.</a></p>
 
+<h2>Como rodar o projeto? </h2>
+	<ol class="mt-3">
+		<li> Installe o NodeJs</li>
+		<li>Utilize o comando "npm run build"</li>
+		<li>Utilize o comando "npm run start"</li>
+	</ol>
+		
 
 <p>Abaixo segue o resultado: </p>
 <img src="./readme/index.png" class="mt-3 mr-3">
