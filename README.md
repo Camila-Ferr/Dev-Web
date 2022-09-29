@@ -1,5 +1,5 @@
 # Dev-Web
-<h2>Descrição: </h2>
+<h2>Trabalho 3_ Descrição: </h2>
 <p> Páginas criadas utilizando as seguintes linguagens de marcação:</p>
 	
 <ul class="mt-3">
@@ -35,6 +35,7 @@
 <img src="./readme/login.png" class="mt-3 mr-3">
 <img src="./readme/top10.png" class="mt-3 mr-3">
 <img src="./readme/meta_leitura.png" class="mt-3 mr-3">
+<h5> Gostou? Deixe o seu like <i class="fa-light fa-face-smile-wink"></i> </h5>
 
 
 	
