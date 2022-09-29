@@ -11,8 +11,8 @@ module.exports={
 
     //Início do bundle, parâmetros de entrada. Aqui, os parâmetros são os arquivos de refêrencia.
     entry: {
-        app: '.app/index.js',
-        vendor: '.vendor/vendor.js'
+        app: './app/index.js',
+        vendor: './vendor/vendor.js'
     },
     //Parâmetros de saída
     output: {
