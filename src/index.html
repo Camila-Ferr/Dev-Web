@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Indica que o site foi criado de forma responsiva. -->
+    <title>Lancamentos</title>
+</head>
+<body>
+   <!-- Navbar responsiva _  Navbar-expand-md(md = médium) :Forma expandida para dispositivos de tamanho médio ou maior (>=768px)
+                               Menu hambúrguer para tratar os dispositivos menores (<768px)  -->
+     <!--  Row - colocar todos os elementos envolvidos na classe na mesma linha -->
+
+   <nav class="navbar navbar-light navbar-expand-md fixed-top " style="background-color: #7ab8e4;"> 
+                                
+      <div class="container">
+         <a class="navbar-brand" href=""><img src="images/logo.png" style="width: 150px" alt="logo"></a> 
+            
+         <div class="row d-none d-md-block">
+            <div class="mr-5 col-md-9"> <!--  mr= margin right -->
+                  
+               <form class="d-flex " role="search">
+                     
+                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="width: 500px">
+                  <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </form>
+                                               
+            </div>
+         </div>
+
+                                
+         <div div class="collapse navbar-collapse mr-5"> <!-- collapse navbar-collapse: Diminui a navbar pra dispositivos menores-->            
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="#">Entrar</a>
+            </div>
+                                
+         </div>
+      </div>
+   </nav>
+      
+   <div class="conteudo" id = "conteudo">
+      <div class="bgmeta_leitura mt-5">
+            
+         <div class="alert bg_outubro" role="alert">
+               
+            <div class="container">
+               <div class="row mt-3">
+                  <div class="col-md-8 h-100 text-right text-white text-center mt-5">
+                        
+                     <h1><strong>Últimas Novidades</strong></h1>
+                     <h4> Conheça os lançamentos desse ano.</h4>
+                  </div>
+                     
+                  <div class="col-md-4 h-100 text-left d-md-block d-none">
+                     <img src="images/outubro.png" style="width:150px ; ">
+                  </div>
+                         
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 col-sm-center">
+               <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 150px"></a> 
+            </div> 
+                     
+            <div class="col-md-5 col-sm-6">
+               <div id="frases-id" class="carousel slide" data-ride="carousel" data-interval="8000">
+                  <div class="carousel-inner">
+                              
+                     <div class="carousel-item active w-15">
+                        <div class="frase text-center">Livros não mudam o mundo, quem muda o mundo são as pessoas. Os livros só mudam as pessoas.</div>
+                        <div class="autor font-italic text-lg-right"> Mário Quintana<i class="fa-solid fa-pen"></i></div>
+                     </div>
+                              
+                     <div class="carousel-item w-15">
+                        <div class="text-center"> A poesia não está nos versos, por vezes ela está no coração. E é tamanha. A ponto de não caber nas palavras.</div>
+                        <div class="font-italic text-lg-right"> Jorge Amado<i class="fa-solid fa-pen"></i></div>
+                     </div>
+                        
+                  </div>
+               </div>
+            </div>
+                     
+            <div class="col-md-4 col-sm-6">
+               <ul class="list-unstyled">
+                           
+                  <li><a href='#'>Quem Somos</a></li>
+                  <li><a href='#'>Cadastro de livros</a></li>
+                  <li><a href='#'>Cadastro de autores</a></li>
+                  <li><a href='#'>Parceria</a></li>
+                  <li><a href='#'>Contato</a></li>
+                        
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="end-page d-none d-md-block">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 col-sm-3 ">
+               <a class="list-unstyled" href="#">Livros</a>
+            </div>
+            <div class="col-md-3 col-sm-3 ">
+               <a class="list-unstyled" href="#">Autores</a>
+            </div>
+            <div class="col-md-3 col-sm-3 ">
+               <a class="list-unstyled" href="#">Editoras</a>
+            </div>
+            <div class="col-md-3 col-sm-3 ">
+               <a class="list-unstyled" href="#">Leitores</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
