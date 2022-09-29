@@ -15,7 +15,7 @@ O trabalho também apresenta como foco o uso do webpack, acrescentando no arquiv
 e acrescendo aos bundles o bootstrap.</p>
 <p>O tema para o desenvolvimento da página se manteve: divulgação de autores brasileiros. A fonte de inspiração para o trabalho foi o <a href="https://www.skoob.com.br/">skoob.</a></p>
 
-<h2>Como rodar o projeto? </h2>
+<h4>Como rodar o projeto? </h4>
 	<ol class="mt-3">
 		<li> Installe o NodeJs</li>
 		<li>Utilize o comando "npm run build"</li>
