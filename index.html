@@ -244,20 +244,24 @@
                      <div class="card-body col-md-9"> 
                         <h5 class="card-title">Perdida | Giovanna Grigio irá estrelar adaptação do livro de Carina Rissi</h5>
                         <div class= "row">
-                        <p class="card-text col-md-5 ">19 de Maio de 2022</p>
-                           <div id = "likes" class="col-md-1">
-                              5
-                           </div>
-                           <button id ="btn-like" type="button" style="width: 30px; height: 30px;" class="col-md-1">
-                              <i class="fa-regular fa-thumbs-up" id="likeIcon"></i>
-                           </button>
-                           <button id ="btn-deslike" type="button" style="width: 50px; height: 30px;" class="col-md-1">
-                              <i class="fa-regular fa-thumbs-down"></i>
-                           </button>
-                           <div id = "deslikes" class="col-md-1">
-                              1
+                           <p class="card-text col-md-4">19 de Maio de 2022</p>
+                        
+                           <div class="col-md-4">
+                              <span id="like-series" data-like-series="9" class="badge badge-dark"></span>
+
+                              <button id="like-btn-series" class="mr-1 border-primary" >
+                                 <i id="icon-like-series" class="far fa-thumbs-up"></i>
+                              </button>
+                              
+
+                              <button id="dislike-btn-series" class="mr-1 border-primary">
+                                 <i id="icon-dislike-series" class="far fa-thumbs-down"></i>
+                              </button>
+                           
+                              <span id="dislike-series" data-dislike-series="3" class="badge badge-primary"></span>
                            </div>
                         </div>
+
                         <div class="card-footer text-right">
                            <button class="btn btn-outline-primary">Confira <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
@@ -269,26 +273,27 @@
                <div class=" tab-pane fade" id="eventos" tabindex="1">
 
                   <div class="row card-columns">
-                     <div class="col-md-4 col-lg-3 h-100 text-center">
-                        <img src="assets/images/artigo2.jpg" style="width: 200px;">
+                     <div class="col-md-4 col-lg-3 h-100 text-center mt-2">
+                        <img src="assets/images/artigo2.jpg" style="width: 210px;">
                      </div>
 
                      <div class="card-body col-md-8">
                         <h5 class="card-title">Confira tudo o que rolou na Bienal do Livro em São Paulo</h5>
                         <div class= "row">
-                           <p class="card-text col-md-5 ">14 de Julho de 2022</p>
-                              <div id = "likes" class="col-md-1">
-                                 5
-                              </div>
-                              <button id ="btn-like" type="button" style="width: 30px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-up" id="likeIcon"></i>
+                           <p class="card-text col-md-5">14 de Julho de 2022</p>
+                           <div class="col-md-3">
+                              
+                              <button id="like-btn-eventos" class="mr-1 border-primary" >
+                                 <i id="icon-like-eventos" class="far fa-thumbs-up"></i>
                               </button>
-                              <button id ="btn-deslike" type="button" style="width: 50px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-down"></i>
+                              <span id="like-eventos" data-like-eventos="3" class="badge badge-primary"></span>
+
+                              <button id="dislike-btn-eventos" class="mr-1 border-primary">
+                                 <i id="icon-dislike-eventos" class="far fa-thumbs-down"></i>
                               </button>
-                              <div id = "deslikes" class="col-md-1">
-                                 1
-                              </div>
+                           
+                              <span id="dislike-eventos" data-dislike-eventos="3" class="badge badge-primary"></span>
+                           </div>
                         </div>
                      
                         <div class="card-footer text-right">
@@ -312,18 +317,20 @@
                         <p>Escritora é a brasileira mais traduzida no mundo e teria feito 100 anos em 2020.</p>
                         <div class= "row">
                            <p class="card-text col-md-5 ">22 de Maio de 2022</p>
-                              <div id = "likes" class="col-md-1">
-                                 5
-                              </div>
-                              <button id ="btn-like" type="button" style="width: 30px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-up" id="likeIcon"></i>
+                           
+                           <div class="col-md-4">
+                              
+                              <button id="like-btn-homenagens" class="mr-1 border-primary" >
+                                 <i id="icon-like-homenagens" class="far fa-thumbs-up"></i>
                               </button>
-                              <button id ="btn-deslike" type="button" style="width: 50px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-down"></i>
+                              <span id="like-homenagens" data-like-homenagens="3" class="badge badge-primary"></span>
+
+                              <button id="dislike-btn-homenagens" class="mr-1 border-primary">
+                                 <i id="icon-dislike-homenagens" class="far fa-thumbs-down"></i>
                               </button>
-                              <div id = "deslikes" class="col-md-1">
-                                 1
-                              </div>
+                           
+                              <span id="dislike-homenagens" data-dislike-homenagens="3" class="badge badge-primary"></span>
+                           </div>
                         </div>
                      
                         <div class="card-footer text-right">
@@ -347,18 +354,20 @@
                         
                         <div class= "row">
                            <p class="card-text col-md-5 ">22 de Maio de 2022</p>
-                              <div id = "likes" class="col-md-1">
-                                 5
-                              </div>
-                              <button id ="btn-like" type="button" style="width: 30px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-up" id="likeIcon"></i>
+                           
+                           <div class="col-md-4">
+                              
+                              <button id="like-btn-leitura" class="mr-1 border-primary" >
+                                 <i id="icon-like-leitura" class="far fa-thumbs-up"></i>
                               </button>
-                              <button id ="btn-deslike" type="button" style="width: 50px; height: 30px;" class="col-md-1">
-                                 <i class="fa-regular fa-thumbs-down"></i>
+                              <span id="like-leitura" data-like-leitura="3" class="badge badge-primary"></span>
+
+                              <button id="dislike-btn-leitura" class="mr-1 border-primary">
+                                 <i id="icon-dislike-leitura" class="far fa-thumbs-down"></i>
                               </button>
-                              <div id = "deslikes" class="col-md-1">
-                                 1
-                              </div>
+                           
+                              <span id="dislike-leitura" data-dislike-leitura="3" class="badge badge-primary"></span>
+                           </div>
                         </div>
                         
                         <div class="card-footer text-right">
