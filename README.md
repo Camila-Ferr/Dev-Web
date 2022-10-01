@@ -35,7 +35,7 @@
 <img src="./readme/login.png" class="mt-3 mr-3">
 <img src="./readme/top10.png" class="mt-3 mr-3">
 <img src="./readme/meta_leitura.png" class="mt-3 mr-3">
-<h5> Gostou? Deixe o seu like <i class="fa-light fa-face-smile-wink"></i> </h5>
+<h5> Gostou? Deixe o seu like :stuck_out_tongue_winking_eye: </h5>
 
 
 	
