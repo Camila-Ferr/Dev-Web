@@ -1,40 +1,13 @@
 # Dev-Web
 <h2>Trabalho 3_ Descrição: </h2>
-<p> Páginas criadas utilizando as seguintes linguagens de marcação:</p>
-	
-<ul class="mt-3">
-    <li>HTML</li>
-	<li>CSS</li>
-</ul>
-
-<p> A proposta do projeto é desenvolver páginas responsivas apresentando como foco o framework <strong>Bootstrap</strong>.</p>
-<p>O tema escolhido para as páginas foi divulgação de autores brasileiros. A fonte de inspiração para o trabalho foi o <a href="https://www.skoob.com.br/">skoob.</a></p>
-
-<p> 🛠 Segue abaixo os componentes utilizados:</p>
-
-<ul class="mt-3">
-	<li>Alerts</li>
-	<li>Badges</li>
-	<li>Button</li>
-	<li>Cards</li>
-    <li>Carousel</li>
-    <li>Forms</li>
-    <li>Footer</li>
-    <li>List group</li>
-    <li>Modal</li>
-    <li>Navbar</li>
-	<li>Navs and tabs</li>
-	<li>Offcanvas</li>
-	<li>Progress</li>
-	<li>Tables</li>
-</ul>
+<p> A ideia principal desse trabalho é o uso de atributos "data" para fazer likes e deslikes.</p>
+<p> Para a realização do trabalho, foi utilizado o <a href="https://github.com/Camila-Ferr/Dev-Web/tree/trabalho_01">trabalho 1</a>, 
+como uma continuação.</p>
+<p>O trabalho foi desenvolvido em JavaScript utilizando JQuery em sua execução.</p> 
 
 
-<p>Abaixo segue os resultados: </p>
-<img src="./readme/pagina_inicial.png" class="mt-3 mr-3">
-<img src="./readme/login.png" class="mt-3 mr-3">
-<img src="./readme/top10.png" class="mt-3 mr-3">
-<img src="./readme/meta_leitura.png" class="mt-3 mr-3">
+<p>Abaixo segue os resultado: </p>
+<img src="./readme/index.png" class="mt-3 mr-3">
 <h5> Gostou? Deixe o seu like :stuck_out_tongue_winking_eye: </h5>
 
 

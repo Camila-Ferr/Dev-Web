@@ -1,35 +1,80 @@
-$("#like-btn-series").click(function () {
-    let like = $("#like").data("like")
-    let dislike = $("#dislike").data("dislike")
+//Chama a função no início do script
+$(document).ready(function () {
+   mostrar();
+});
 
-    $("#like").addClass("badge badge-secondary")
-    $("#dislike").addClass("badge badge-secondary")
 
-    $("#like").text(like)
-    $("#dislike").text(dislike)
- })
+//função de escuta que passa por todos os spans e fazem eles serem exibidos na tela
+function mostrar() {
+   const ids = ["series", "eventos", "homenagens","leitura"]
 
- $("#like-btn-series").click(function () {
-    let like = $("#like-series").data("like-series")
-    let dislike = $("#dislike-series").data("dislike-series")
+   
+   for (const obj of ids) {
+      let like = $(`#like-${obj}`).data(`like-${obj}`)
+      let dislike = $(`#dislike-${obj}`).data(`dislike-${obj}`)
 
-    if ($("#icon-like-series").hasClass("far fa-thumbs-up")) { //Botão está clicado
-       $("#like-series").text(like + 1);
-       $("#icon-like-series").removeClass("far fa-thumbs-up");
-       $("#icon-like-series").addClass("fas fa-thumbs-up");
+      $(`#like-${obj}`).text(like);
+      $(`#dislike-${obj}`).text(dislike);
 
-       if ($("#icon-dislike-series").hasClass("fas fa-thumbs-down")){ //Botão oposto
-          $("#dislike-series").text(dislike);
-          $("#icon-dislike-series").removeClass("fas fa-thumbs-down");
-          $("#icon-dislike-series").addClass("far fa-thumbs-down");
-       }
-       return;
-    }
-    //Botão não está clicado
-    $("#like-series").text(like);
-    $("#icon-like-series").removeClass("fas fa-thumbs-up");
-    $("#icon-like-series").addClass("far fa-thumbs-up");
-    return;
- })
+      //Para likes
+      $(`#like-btn-${obj}`).on('click', function click(e) {
+      
+         //Se não está marcado
+         if ($(`#icon-like-${obj}`).hasClass("far fa-thumbs-up")) { //Botão está clicado
+
+            //Acrescenta mais um
+            $(`#like-${obj}`).text(like + 1);
+            //Remove uma classe e adiciona outra  
+            $(`#icon-like-${obj}`).removeClass("far fa-thumbs-up");
+            $(`#icon-like-${obj}`).addClass("fas fa-thumbs-up");
+
+            //Se o ícone de dislike estiver clicado
+            if($(`#icon-dislike-${obj}`).hasClass("fas fa-thumbs-down")){
+               $(`#dislike-${obj}`).text(dislike);
+               $(`#icon-dislike-${obj}`).removeClass("fas fa-thumbs-down");
+               $(`#icon-dislike-${obj}`).addClass("far fa-thumbs-down");
+            }
+         }
+      
+         //Se o ícone estiver clicado e clicar novamente, desmarca
+         else if ($(`#icon-like-${obj}`).hasClass("fas fa-thumbs-up")){ //Botão oposto
+         
+            $(`#like-${obj}`).text(like);
+            $(`#icon-like-${obj}`).removeClass("fas fa-thumbs-up");
+            $(`#icon-like-${obj}`).addClass("far fa-thumbs-up");
+         }
+      })
+      
+      //Para dislikes
+      $(`#dislike-btn-${obj}`).on('click', function click(e) {
+      
+         //Se não está marcado
+         if ($(`#icon-dislike-${obj}`).hasClass("far fa-thumbs-down")) { //Botão está clicado
+   
+            //Acrescenta mais um
+            $(`#dislike-${obj}`).text(dislike + 1);
+            //Remove uma classe e adiciona outra  
+            $(`#icon-dislike-${obj}`).removeClass("far fa-thumbs-down");
+            $(`#icon-dislike-${obj}`).addClass("fas fa-thumbs-down");
+
+            if ($(`#icon-like-${obj}`).hasClass("fas fa-thumbs-up")){ //Se o like está clicado
+         
+               $(`#like-${obj}`).text(like);
+               $(`#icon-like-${obj}`).removeClass("fas fa-thumbs-up");
+               $(`#icon-like-${obj}`).addClass("far fa-thumbs-up");
+            }
+         }
+         
+         //Se está marcado
+         else if ($(`#icon-dislike-${obj}`).hasClass("fas fa-thumbs-down")){ //Se o dislike está clicado, desclica
+            
+            $(`#dislike-${obj}`).text(dislike);
+            $(`#icon-dislike-${obj}`).removeClass("fas fa-thumbs-down");
+            $(`#icon-dislike-${obj}`).addClass("far fa-thumbs-down");
+         }
+      })
+   }
+}
+
     
 
